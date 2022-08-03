@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+	function pulaLinha() {
+		document.write("<br>");
+	}
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+	function multiplicar(numero1, numero2) {
+		var multip = (numero1 * numero2);
+		return multip;
+	}
+
+	var nome = prompt("Qual é o seu nome?")
+	var bemvindo = alert("Olá " + nome + ", bem-vindo, faça a conta que desejar.");
+	var primeiroNumero = prompt("Qual vai ser o primeiro número? ");
+	var segundoNumero = prompt(primeiroNumero + " vezes?");
+
+	var multipTotal = multiplicar(primeiroNumero, segundoNumero);
+	mostra("O resultado da multiplicação é " + multipTotal);
+
+</script>
