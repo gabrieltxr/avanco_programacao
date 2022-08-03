@@ -1,0 +1,59 @@
+<meta charset="UTF-8">
+
+<script> 
+	function pulaLinha() {
+		document.write("<br>");
+	}
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+	function espacar() {
+		document.write("<hr>")
+	}
+	function multiplicar(numero1, numero2) {
+		var multip = numero1 * numero2;
+		return multip;
+	}
+	function dividir(numero1, numero2) {
+		var divid = numero1 / numero2;
+		return divid;
+	}
+	function somar(numero1, numero2) {
+		var soma = numero1 + numero2;
+		return soma;
+	}
+	function diminuir(numero1, numero2) {
+		var dimin = numero1 - numero2;
+		return dimin;
+	}
+	function calculoMedia(numero1, numero2, numero3) {
+		var media = (numero1 + numero2 + numero3) / 3
+		return media;
+	}
+
+	var tituloDoCalculoMultip = alert("Multiplicação!");
+	var primeiroNumero1 = prompt("Qual vai ser o primeiro número?");
+	var segundoNumero1 = prompt("Qual vai ser o segundo número?")
+	var multipCalculo = multiplicar(primeiroNumero1, segundoNumero1);
+	mostra("O resultado da multiplicação é " + multipCalculo);
+	espacar();
+	var tituloDoCalculoDivid = alert("Divisão!");
+	var primeiroNumero2 = prompt("Qual vai ser o primeiro número?");
+	var segundoNumero2 = prompt("Qual vai ser o segundo número?");
+	var dividCalculo = dividir(primeiroNumero2, segundoNumero2);
+	mostra("O resultado da divisão é " + dividCalculo);
+	espacar();
+	// algo muito errado ta rolando nessa media
+	var tituloDoCalculoMedia = alert("Média!");
+	var primeiroNumero3 = parseInt(prompt("Qual vai ser o primeiro número?"));
+	var segundoNumero3 = parseInt(prompt("Qual vai ser o segundo número?"));
+	var terceiroNumero = parseInt(prompt("E qual o terceiro?"));
+	var mediaCalculo = calculoMedia(primeiroNumero3, segundoNumero3, terceiroNumero);
+	mostra("O resultado da média é " + mediaCalculo);
+	espacar();
+
+	
+
+</script>
+
