@@ -1,0 +1,88 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha() {
+		document.write("<br><br>");
+	}
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+	function espacar() {
+		document.write("<hr>");
+		pulaLinha();
+	}	
+	function titular(frase) {
+		document.write("<h2>" + frase + "</h2>");
+
+	}
+	function somaDoisNumeros(numero1, numero2) {
+		var soma = (numero1 + numero2);
+		return soma
+		pulaLinha();
+	}
+	function multipDoisNumeros(numero1, numero2) {
+		var multip = (numero1 * numero2);
+		return multip
+		pulaLinha();
+	}
+	function divisDoisNumeros(numero1, numero2) {
+		var divis = (numero1 / numero2);
+		return divis;
+		pulaLinha();
+	}
+	function mediaTresNumeros(numero1, numero2, numero3) {
+		var media = Math.round((numero1 + numero2 + numero3) / 3);
+		return media;
+		pulaLinha();
+	}
+
+	titular("Soma")
+	espacar();
+
+	var somaUm = somaDoisNumeros(10, 30);
+	mostra("O resultado da soma é " + somaUm);
+
+	var somaDois = somaDoisNumeros(60, 80);
+	mostra("O resultado da segunda soma é " + somaDois);
+
+	titular("Multiplicação");
+	espacar();
+
+	var multipUm = multipDoisNumeros(70, 60);
+	mostra("O resultado da multplicação é " + multipUm);
+	var multipDois = multipDoisNumeros(10, 20);
+	mostra("O resultado da segunda multiplicação é " + multipDois);
+
+	titular("Divisão");
+	espacar();
+
+	var divisUm = divisDoisNumeros(90, 2);
+	mostra("O resultado da divisão é " + divisUm);
+	var divisDois = divisDoisNumeros(700, 20);
+	mostra("O resultado da segunda divisão é " + divisDois);
+	var divisTres = divisDoisNumeros(50, 2);
+	mostra("O resultado da terceira divisão é " + divisTres);
+
+	titular("Média");
+	espacar();
+
+	var mediaUm = mediaTresNumeros(30, 20, 40);
+	mostra("A média entre os três números é de " + mediaUm);
+	var mediaDois = mediaTresNumeros(10, 27, 50);
+	mostra("A média entre os dois números é de " + mediaDois);
+	var mediaTres = mediaTresNumeros(89, 65, 32);
+	mostra("A média entre estes três números é " + mediaTres);
+	var mediaQuatro =mediaTresNumeros(23, 41, 82);
+	mostra("A media entre esses três números é de " + mediaQuatro);
+
+
+
+
+
+
+
+
+
+
+</script>	
