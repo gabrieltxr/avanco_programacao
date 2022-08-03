@@ -1,0 +1,57 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha() {
+		document.write("<br>");
+	}
+	function mostra(frase) {
+		document.write(frase);
+	}
+	function somaDoisNumeros(numero1, numero2) {
+		mostra(numero1 + " mais " + numero2 + " é "+ (numero1 + numero2));
+		pulaLinha();
+	}
+	function espacar() {
+		document.write("<br><br>");
+		document.write("<hr>");
+	}
+	function somaTresNumeros(numero1, numero2, numero3) {
+		mostra("A soma dos números " + numero1 + ", " + numero2 + " e " + numero3 + " é " + (numero1 + numero2 + numero3));
+		pulaLinha();
+	}
+	function mediaTresNumeros(numero1, numero2, numero3) {
+		mostra("A média entre os três números é de " + Math.round((numero1 + numero2 + numero3) / 3));
+		pulaLinha();
+	}
+	function calculoMultiplicao(numero1, numero2) {
+		mostra(numero1 + " vezes " + numero2 + " é " + (numero1 * numero2));
+		pulaLinha();
+	}
+	function calculoDivisao(numero1, numero2) {
+		mostra(numero1 + " divido por " + numero2 + " é " + (numero1 / numero2));
+		pulaLinha();
+	}
+	function calculoValorPorcentagem(numero1, numero2, numero3) {
+		mostra(numero2 + "%" + " de " + numero1 + " é " + ((numero1 * numero2) / numero3));
+		pulaLinha();
+	}
+
+	somaDoisNumeros(500, 2000);
+	espacar();
+	somaTresNumeros(500, 1000, 345);
+	espacar();
+	mediaTresNumeros(300, 700, 800);
+	espacar();
+	calculoDivisao(80, 8);
+	espacar();
+	calculoMultiplicao(50, 80);
+	espacar();
+	calculoValorPorcentagem(300, 20, 100);
+	espacar();
+
+
+
+
+
+
+</script>
