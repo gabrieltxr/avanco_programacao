@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha() {
+		document.write("<br>");
+	}
+	function mostra(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var senha = prompt("Qual é a senha?")
+
+	if(senha == "senha123") {
+		mostra("Acesso liberado!")
+	}
+	else {
+		mostra("Acesso negado!")
+	}
+
+</script>
