@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha() {
+		document.write("<br>")
+	}
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var respostas = alert("Responder com sim ou não!!")
+	var diaClima = prompt("O dia está chuvoso?");
+	var diaSemana = prompt("Hoje é sexta-feira?");
+
+
+	if(diaClima == "não" && diaSemana == "sim") {
+		mostra("Hoje é dia de cinema!!")
+	}
+
+	if(diaClima == "sim" && diaSemana == "sim") {
+		mostra("Não esquece o guarda-chuva, bora ir pro cinema!!")
+	}
+
+	if(diaClima == "não" && diaSemana == "não") {
+		mostra("Ah que pena, tomara que não chova na sexta")
+	}
+
+	if(diaClima == "sim" && diaSemana == "não") {
+		mostra("Dia de ficar em casa!!")
+	}
+
+
+</script>
