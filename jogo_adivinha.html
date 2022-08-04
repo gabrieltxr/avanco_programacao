@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script> 
+	function pulaLinha() {
+		document.write("<br>")
+	}
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	// anotação para análise posterior: pequei em não por o () no math.random para indicar que o mesmo
+	// não tinha parâmetro
+	// de resto consegui executar o as condições para o jogo de forma tranquila.
+	// entao lembre-se!!!
+	var numeroResposta = (Math.round(Math.random() * 10))
+	var chute = parseInt(prompt("Qual o seu chute?"))
+
+	if(chute == numeroResposta) {
+		mostra("Você acertou!")
+	}
+	else {
+		mostra("Você errou! O número era " + numeroResposta + "!");
+	}
+
+</script>
