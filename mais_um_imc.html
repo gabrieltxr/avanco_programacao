@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha() {
+		document.write("<br>")
+	}
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+	function calculaIMC(peso, altura) {
+		return peso / (altura * altura);
+	}
+
+	var nome = prompt("Qual é o seu nome?")
+	var pesoIndicado = prompt(nome + ", quanto você pesa?");
+	var alturaIndicada = prompt(nome + ", e qual é a sua altura?");
+	var imcTotal = calculaIMC(pesoIndicado, alturaIndicada);
+
+	if(imcTotal >= 35) {
+		mostra(nome + ", o seu IMC de " + imcTotal + " está acima do valor saudável");
+		mostra("Quer saber mais sobre como se cuidar? <a href=https://saude.abril.com.br//>Clique aqui</a>")
+	}
+	if(imcTotal <= 18.5) {
+		mostra(nome + ", o seu IMC de " + imcTotal + " está abaixo do valor saudável");
+		mostra("Quer saber mais sobre como se cuidar? <a href=https://saude.abril.com.br//>Clique aqui</a>")
+	}
+	if(imcTotal >= 18.5 && imcTotal <= 35) {
+		mostra(nome + ", o seu IMC de " + imcTotal + " está no nível saudável, parabéns!");
+	}
+
+</script>
