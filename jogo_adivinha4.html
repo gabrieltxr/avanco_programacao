@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha () {
+		document.write("<br>");
+	}
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+	function sorteia(n) {
+		return Math.round(Math.random() * n)
+	}
+
+	var numeroSorteado = sorteia(10)
+	console.log(numeroSorteado)
+	var chute = prompt("Qual é o seu chute?")
+
+	if(chute == numeroSorteado) {
+		mostra("Parabéns, você acertou!!")
+	}
+	else {
+		mostra("Você errou.")
+	}
+
+</script>
