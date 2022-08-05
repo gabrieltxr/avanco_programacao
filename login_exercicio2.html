@@ -27,7 +27,10 @@
 				
 				alert("login/senha erradx! Tente novamente!")
 			}
-		
+			if(tentativaAtual == tentativaMaxima && loginAlternativa != loginCadastrado && senhaAlternativa != senhaCadastrada) {
+
+				alert("Site bloqueado!!")
+			}
 		tentativaAtual = tentativaAtual + 1
 	}
 </script>
