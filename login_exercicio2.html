@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<script>
+	function pulaLinha () {
+		document.write("<br>")
+	}
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var loginCadastrado = "gabriel"
+	var senhaCadastrada = "senha"
+
+	var tentativaMaxima = 3
+	var tentativaAtual = 1
+
+	while(tentativaAtual <= tentativaMaxima) {
+		var loginAlternativa = prompt("Qual é o seu login?")
+		var senhaAlternativa = prompt("Qual é a sua senha?")
+		if(loginAlternativa == loginCadastrado && senhaAlternativa == senhaCadastrada) {
+			tentativaAtual = tentativaMaxima
+			alert("Bem-vindo, " + loginCadastrado + "!");
+			mostra("Página de " + loginCadastrado);
+			mostra("Acesso garantido as notícias: <a href=https:g1.globo.com/>Portal G1</a>")
+		}
+			if(loginAlternativa != loginCadastrado && senhaAlternativa != senhaCadastrada) {
+				
+				alert("login/senha erradx! Tente novamente!")
+			}
+		
+		tentativaAtual = tentativaAtual + 1
+	}
+</script>
